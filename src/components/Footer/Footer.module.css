@@ -1,0 +1,96 @@
+.footer {
+  padding: 60px 0 30px;
+  border-top: 1px solid var(--border);
+  background: var(--background);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+}
+
+.logo p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.footerLinks a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.footerLinks a:hover {
+  color: var(--primary);
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.socials a:hover {
+  color: var(--primary);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.scrollBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.scrollBtn:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerLinks {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

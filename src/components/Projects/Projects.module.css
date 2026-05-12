@@ -1,0 +1,155 @@
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 8px 24px;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-weight: 600;
+  background: transparent;
+}
+
+.filterBtn:hover, .filterBtn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.projectCard {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--surface);
+}
+
+.projectImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--border-hover);
+  background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+
+.overlayLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.overlayLinks a {
+  width: 45px;
+  height: 45px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: var(--transition);
+}
+
+.overlayLinks a:hover {
+  transform: scale(1.1);
+  background: var(--primary-hover);
+}
+
+.projectInfo {
+  padding: 24px;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.techBadge {
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.projectTitle {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.projectDesc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.projectActions {
+  display: flex;
+  gap: 16px;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.actionBtn:hover {
+  color: var(--primary);
+}
+
+.liveBtn {
+  color: var(--primary);
+}
+
+@media (max-width: 480px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
