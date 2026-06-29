@@ -79,9 +79,9 @@ const Projects = () => {
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Code2 size={20} />
                       </a>
-                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                      {/* <a href={project.live} target="_blank" rel="noopener noreferrer">
                         <ExternalLink size={20} />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -99,9 +99,9 @@ const Projects = () => {
                     <a href={project.github} className={styles.actionBtn}>
                       <Code2 size={18} /> Code
                     </a>
-                    <a href={project.live} className={`${styles.actionBtn} ${styles.liveBtn}`}>
+                    {/* <a href={project.live} className={`${styles.actionBtn} ${styles.liveBtn}`}>
                       <ExternalLink size={18} /> Live Demo
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </motion.div>
